@@ -1,18 +1,32 @@
-/* Body styling */
+/* Body styling with background */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
 
-  /* add background image here — replace URL with your own */
-  background-image: url("https://wallpapercave.com/w/wp6890841");
+  /* Use your uploaded PNG file */
+  background-image: url("");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
 
+  color: white;
   min-height: 100vh;
   padding: 20px;
+  margin: 0;
 }
+
+/* Dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  pointer-events: none;
+}
+
 /* Header */
 h1 {
   font-size: 3em;
@@ -31,7 +45,7 @@ h1 {
   animation: fadeInUp 1s ease forwards;
 }
 
-/* Buttons */
+/* Buttons styling and hover effect */
 button {
   display: block;
   margin: 15px auto;
@@ -45,14 +59,13 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 button:hover {
   transform: scale(1.05) rotate(-2deg);
   background: #ff8787;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Score */
+/* Score text */
 #score {
   font-size: 1.5em;
   margin-top: 20px;
@@ -60,7 +73,7 @@ button:hover {
   animation: fadeIn 1s ease forwards;
 }
 
-/* Developer line */
+/* Developer text */
 #developer {
   font-size: 14px;
   color: #ddd;
@@ -69,13 +82,13 @@ button:hover {
 }
 
 /* Animations */
-@keyframes fadeInDown {
-  0% { opacity: 0; transform: translateY(-50px);}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(50px);}
   100% { opacity: 1; transform: translateY(0);}
 }
 
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(50px);}
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-50px);}
   100% { opacity: 1; transform: translateY(0);}
 }
 
