@@ -1,15 +1,18 @@
 /* Body styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
-  min-height: 100vh;
-  margin: 0;
-  padding: 20px;
-  transition: background 0.5s ease;
-}
 
+  /* add background image here — replace URL with your own */
+  background-image: url("https://wallpapercave.com/w/wp6890841");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+  min-height: 100vh;
+  padding: 20px;
+}
 /* Header */
 h1 {
   font-size: 3em;
