@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Quiz App</title>
-<link rel="stylesheet" href="style.css">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Simple Quiz</h1>
+  <h1>Simple Quiz</h1>
 
-<div id="quiz">
+  <div id="quiz-container">
+    <p id="question"></p>
+    <button onclick="checkAnswer('A')" id="A"></button>
+    <button onclick="checkAnswer('B')" id="B"></button>
+    <button onclick="checkAnswer('C')" id="C"></button>
+    <button onclick="checkAnswer('D')" id="D"></button>
 
-<p id="question"></p>
+    <!-- Developer name stays visible for all questions -->
+    <p id="developer">Developed by Yash Amarsela</p>
+  </div>
 
-<button onclick="checkAnswer('A')" id="A"></button>
-<button onclick="checkAnswer('B')" id="B"></button>
-<button onclick="checkAnswer('C')" id="C"></button>
-<button onclick="checkAnswer('D')" id="D"></button>
+  <p id="score"></p>
 
-</div>
-
-<p id="score"></p>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-</html>
+</html>20px;">Developed by Yash Amarsela</p>
