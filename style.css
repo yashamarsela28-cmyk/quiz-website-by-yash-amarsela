@@ -1,26 +1,82 @@
+/* Body styling */
 body {
-  font-family: Arial;
+  font-family: 'Arial', sans-serif;
   text-align: center;
-  background: #f2f2f2;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
   padding: 20px;
+  transition: background 0.5s ease;
 }
 
+/* Header */
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Quiz container */
+#quiz-container {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Buttons */
 button {
   display: block;
-  margin: 10px auto;
-  padding: 10px;
-  width: 200px;
+  margin: 15px auto;
+  padding: 12px 20px;
+  width: 220px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  background: #ff6b6b;
+  color: #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-#developer {
-  font-size: 14px;
-  color: gray;
-  margin-top: 20px;
+button:hover {
+  transform: scale(1.05) rotate(-2deg);
+  background: #ff8787;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+/* Score */
 #score {
-  font-size: 18px;
+  font-size: 1.5em;
   margin-top: 20px;
   font-weight: bold;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Developer line */
+#developer {
+  font-size: 14px;
+  color: #ddd;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-50px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(50px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
 }
