@@ -1,9 +1,10 @@
+
 /* Body styling with background */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
 
-  /* Use your uploaded PNG file */
+  /* Corrected background image */
   background-image: url("c6db3147-b844-4ff8-9638-e337472bb0e3.jpg");
   background-size: cover;
   background-position: center;
@@ -25,6 +26,7 @@ body::before {
   bottom: 0;
   background: rgba(0,0,0,0.4);
   pointer-events: none;
+  z-index: -1;
 }
 
 /* Header */
@@ -59,6 +61,7 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 button:hover {
   transform: scale(1.05) rotate(-2deg);
   background: #ff8787;
@@ -83,16 +86,16 @@ button:hover {
 
 /* Animations */
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(50px);}
-  100% { opacity: 1; transform: translateY(0);}
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInDown {
-  0% { opacity: 0; transform: translateY(-50px);}
-  100% { opacity: 1; transform: translateY(0);}
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
